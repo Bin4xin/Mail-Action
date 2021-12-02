@@ -1,8 +1,26 @@
-# 哨兵EMAIL申请
+# 零、哨兵EMAIL申请
 
-- 用法：
+## 0x01、简单用法：
 
-第一步：FORK:)
+- 确保您已经加入本仓库`Manage access - collaborators`中；
+- 克隆代码到本地：`git clone https://github.com/Bin4xin/Mail-Action.git`
+- 本地修改`.github/workflows/action.yml`目录文件：
+
+```yml
+run: bash ./SCS_domail_mail_manage.sh ${{secrets.SENTRY_MAIL_PDDTOKEN}} contact-me 
+#Line15: <修改这里.>最后一个字段为您的用户名 如修改填入contact-me ，那么您的邮箱为contact-me@sentrylab.cn
+
+to: 1904829268@qq.com 
+#Line31: <修改这里.>接收您账号密码的邮箱 用于接收您新建邮箱的账号密码
+```
+如果在git使用中遇到问题参阅[下列文章/代码](#参考文献/代码)
+
+接着推送到github仓库就行，到此处下一步就是手动触发[action](#action)。
+
+<details>
+<summary>## 0x02、Git Fork用法：</summary>
+
+第一步：FORK本仓库:)
 
 第二步：克隆代码到本地
 
@@ -14,22 +32,31 @@
 
 第四步：在该分支提交你的更改，然后提交
 
-<code>
+```bash
 git add .
 $ (linux & mac) git commit -m "[`date +%Y/%m/%d/%T`]<调试::ACTION>: commit by bin4xin/${Operator-name}"
-> (windows)
+> (windows powershell) git commit -m "(get-date -format 'yyyy/MM/dd/HH:mm:ss')<调试::ACTION>: commit by bin4xin/${Operator-name}"
 git push origin SCS-1.0-dev
-</code>
+```
 
 第五步：推送本地分支到自己的fork库
 
-```
+```bash
+git remote add upstream git@github.com:sentryCyberSec/Mail-Action.git
+
 git fetch origin
 git merge SCS-1.0-dev
 git push upstream SCS-1.0-dev
 ```
 
-第六步：点击上面的`pull request`就可以推送请求了，确认无误后填写`pull request`的标题和具体内容，点击`create pull request`绿色按钮推送
+第六步：点击上面的`pull request`就可以推送请求了，确认无误后填写`pull request`的标题和具体内容，点击`create pull request`绿色按钮推送合并即可。
+
+</details>
+
+## action
+
+
+
 
 # Email Action
 
@@ -63,6 +90,8 @@ git push upstream SCS-1.0-dev
 
 ## 参考文献/代码
 
+- [Github · Support for password authentication was removed. Please use a personal access token instead](https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to)
+- [git@github.com: Permission denied (publickey). 解决github Permission denied (publickey)问题](https://www.jianshu.com/p/f22d02c7d943)
 - [crontab执行时间计算](https://tool.lu/crontab/)
 - [bash-use-printf-for-comma-seperated-columns](https://stackoverflow.com/questions/51578299/bash-use-printf-for-comma-seperated-columns)
 - [sed相关用法]
