@@ -18,7 +18,7 @@ to: 1904829268@qq.com
 接着推送到github仓库就行，到此处下一步就是手动触发[action](#action)。
 
 <details>
-<summary><h2>0x02、Git Fork用法：</h2></summary>
+<summary><del>0x02、Git Fork用法：</del></summary>
 
 第一步：FORK本仓库:)
 
@@ -75,6 +75,26 @@ git push upstream SCS-1.0-dev
 ## 效果
 
 <img src="/assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%">
+
+## 加入客户端
+
+- 点击邮箱提示登录确认按钮激活
+- [进入WEB主页配置](https://mail.yandex.com/?dpda=yes#setup/client)
+- 选择`From the pop.yandex.com server via POP3`子项按钮按需选择、`Don't automatically delete emails marked as deleted in IMAP`
+
+保存。
+
+- 客户端连接
+	- 随机客户端密码配置：
+	- 1、[点击进入账户管理](https://passport.yandex.com/profile/)
+	- 2、`Passwords and authorization` -> `App passwords` 新建即可
+- 如果配置了客户端随机密码那么就使用随机密码，否则是WEB的登录密码。
+
+```
+POP3：pop.yandex.com SSL端口：995
+SMTP：smtp.yandex.com SSL端口：465
+IMAP：imap.yandex.com SSL端口：993
+```
 
 ## 下一步计划
 
