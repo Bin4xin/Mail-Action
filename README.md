@@ -1,6 +1,6 @@
 # 零、哨兵EMAIL申请
 
-## 0x01、简单用法：
+#### 0x01、简单用法：
 
 - 确保您已经加入本仓库`Manage access - collaborators`中；
 - 克隆代码到本地：`git clone https://github.com/Bin4xin/Mail-Action.git`
@@ -18,7 +18,7 @@ to: 1904829268@qq.com
 接着推送到github仓库就行，到此处下一步就是手动触发[action](#action)。
 
 <details>
-<summary><del>0x02、Git Fork用法：</del></summary>
+<summary><del>0x02、Git Fork用法：<不推荐></del></summary>
 
 第一步：FORK本仓库:)
 
@@ -55,26 +55,11 @@ git push upstream SCS-1.0-dev
 
 ## action
 
-<img src="/assets/截屏2021-12-02 下午10.09.56.png" width="50%" height="50%">
+<img src="/assets/截屏2021-12-02 下午10.09.56.png" width="90%" height="90%">
 
 ## 效果
 
 <img src="/assets/截屏2021-12-02 下午10.13.02.png" width="50%" height="50%">
-
-# Email Action
-
-*GithubAction发送邮件样例，仅仅只是一个测试demo*
-
-*example of action to send an email. Just a test:)*
-
-- **基于Github Action的Bash自动邮件脚本**
-	- **邮件网页模版设计;**
-	- **邮件HTML格式`html_body: file://result.html`;**
-	- **抄送`cc`.**
-
-## 效果
-
-<img src="/assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%">
 
 ## 加入客户端
 
@@ -95,6 +80,21 @@ POP3：pop.yandex.com SSL端口：995
 SMTP：smtp.yandex.com SSL端口：465
 IMAP：imap.yandex.com SSL端口：993
 ```
+
+# Email Action
+
+*GithubAction发送邮件样例，仅仅只是一个测试demo*
+
+*example of action to send an email. Just a test:)*
+
+- **基于Github Action的Bash自动邮件脚本**
+	- **邮件网页模版设计;**
+	- **邮件HTML格式`html_body: file://result.html`;**
+	- **抄送`cc`.**
+
+## 效果
+
+<img src="/assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%">
 
 ## 下一步计划
 
