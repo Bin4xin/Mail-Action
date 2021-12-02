@@ -13,12 +13,12 @@ run: bash ./SCS_domail_mail_manage.sh ${{secrets.SENTRY_MAIL_PDDTOKEN}} contact-
 to: 1904829268@qq.com 
 #Line31: <修改这里.>接收您账号密码的邮箱 用于接收您新建邮箱的账号密码
 ```
-如果在git使用中遇到问题参阅[下列文章/代码](#参考文献/代码)
+如果在git使用中遇到问题参阅[下列文章/代码](#参考文献代码)
 
 接着推送到github仓库就行，到此处下一步就是手动触发[action](#action)。
 
 <details>
-<summary>## 0x02、Git Fork用法：</summary>
+<summary><h2>0x02、Git Fork用法：</h2></summary>
 
 第一步：FORK本仓库:)
 
@@ -55,8 +55,11 @@ git push upstream SCS-1.0-dev
 
 ## action
 
+<img src="/assets/截屏2021-12-02 下午10.09.56.png" width="50%" height="50%">
 
+## 效果
 
+<img src="/assets/截屏2021-12-02 下午10.13.02.png" width="50%" height="50%">
 
 # Email Action
 
@@ -71,7 +74,7 @@ git push upstream SCS-1.0-dev
 
 ## 效果
 
-<img src="/assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%"> 
+<img src="/assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%">
 
 ## 下一步计划
 
