@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./htmlTemp_Demo.sh
 
 function _Generate_Users_StrongPassword_Algorithm(){
 	local i tmp size max rand
@@ -25,7 +24,7 @@ function _Domain_MainAccess_Manage_ByAdmin(){
 # 	"$Aceess_EmailList_Manage_API/list?domain=$Access_Domain")
 
 #	add user.
-	ADD_MAIL_List_Request=$(curl -H "PddToken: ${Define_PDD_Token}" \
+	ADD_MAIL_List_Request=$(curl -s -H "PddToken: ${Define_PDD_Token}" \
 	-H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:93.0) Gecko/20100101 Firefox/93.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8" \
 	-d "domain=$Access_Domain&login=$Define_Mail_UsernameNosuffix&password=$_Pass_From_GUSP_Algo" \
@@ -36,7 +35,10 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/w
 function  _SCSMAIN_Domain_Mail_Manage_Logic(){
 	_Generate_Users_StrongPassword_Algorithm
 	_Domain_MainAccess_Manage_ByAdmin
-	echo -e "$EmailhtmlTempStart$Define_Mail_FullUsername\n密码为:\n $_Pass_From_GUSP_Algo\n$EmailhtmlTempEnd\n" > result.html
+	#echo -e "$EmailhtmlTempStart$Define_Mail_FullUsername\n密码为:\n $_Pass_From_GUSP_Algo\n$EmailhtmlTempEnd\n" > result.html
+	export Username=${Define_Mail_FullUsername}
+	export Password=${_Pass_From_GUSP_Algo}
+	envsubst  <./htmlTemp_Demo.html.template >./result.html
 }
 
 # Set gobal var here. Visit https://yandex.com/dev/domain/doc/reference/email-add.html to access api.
