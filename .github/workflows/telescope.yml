@@ -8,13 +8,11 @@ jobs:
     steps:
       - name: 'Checkout codes'
         uses: actions/checkout@v1
-     # - name: 'Set env and tools'
-     #   run: |
-     #     apt install nmap
       - name: 'Get Some Value'
         run: which aq
-
-      # - name: 'Send mail'
+      # - name: 'Set env and tools'
+      #   run: |
+      #     apt install nmap      # - name: 'Send mail'
       #   uses: dawidd6/action-send-mail@v3
       #   with:
       #     server_address: smtp.yandex.com
