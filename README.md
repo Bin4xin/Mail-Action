@@ -102,14 +102,11 @@ IMAP：imap.yandex.com SSL端口：993
 - 现HTML模版过于简单，计划添加复杂HTML模版。
 
 
-## 拓展阅读
+## 贡献者
 
-- 现成的mail api aciton
-	- [dawidd6/action-send-mail](https://github.com/dawidd6/action-send-mail)
-- 参考demo代码
-	- [ruanyf/weather-action](https://github.com/ruanyf/weather-action)
-- 相关官方文档
-	- [Github Actions.](https://github.com/features/actions)
+| 仓库贡献者 | Pull & Request | 备注 |
+| :--- | :--- | :--- |
+| [@Yang2635 ](https://github.com/Yang2635) | [#2](https://github.com/Bin4xin/Mail-Action/pull/2) | <ul><li>修改：将htmlTemp_Demo.sh修改为htmlTemp_Demo.html.template模板</li><li>优化：引用模板渲染result.html文件，而非命令的拼凑</li><li>优化：取消curl执行的进度显示</li></ul> |
 
 ## 参考文献/代码
 
@@ -120,6 +117,14 @@ IMAP：imap.yandex.com SSL端口：993
 - [sed相关用法]
 	- [sed在行首（行尾）添加字符串；在某行后添加多行字符串](https://blog.csdn.net/qianlong4526888/article/details/8669935)
 	- [sed当中使用变量替换以及执行外部命令](https://blog.csdn.net/linwhwylb/article/details/7184748)
+
+- 拓展阅读
+	- 现成的mail api aciton
+		- [dawidd6/action-send-mail](https://github.com/dawidd6/action-send-mail)
+	- 参考demo代码
+		- [ruanyf/weather-action](https://github.com/ruanyf/weather-action)
+	- 相关官方文档
+		- [Github Actions.](https://github.com/features/actions)
 
 ## 致谢:)
 
