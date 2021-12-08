@@ -1,0 +1,33 @@
+name: 'SENTRY_TELESCOPE'
+
+on: [workflow_dispatch]
+
+jobs:
+  autoRun:
+    runs-on: self-hosted
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
+     # - name: 'Set env and tools'
+     #   run: |
+     #     apt install nmap
+      - name: 'Get Some Value'
+        run: |
+         which aq
+
+      # - name: 'Send mail'
+      #   uses: dawidd6/action-send-mail@v3
+      #   with:
+      #     server_address: smtp.yandex.com
+      #     server_port: 465
+      #     username: ${{ secrets.MAIL_USERNAME }}
+      #     password: ${{ secrets.MAIL_PASSWORD }}
+      #     username: ${{secrets.SENTRY_MAIL_USERNAME}}
+      #     password: ${{secrets.SENTRY_MAIL_PASSWORD}}
+      #     subject: "您的订阅信息"
+      #     html_body: file://result.html
+      #     to: 2635641640@qq.com # <修改这里.>接收您账号密码的邮箱
+      #     cc: chihou.pro@gmail.com
+      #     from: 哨兵 -  ${{ env.REPORT_COMMIT }}
+      #     from: 哨兵
+      #     content_type: text/html
