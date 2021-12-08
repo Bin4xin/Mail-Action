@@ -1,0 +1,12 @@
+name: 'SENTRY_TELESCOPE-2'
+
+on: [workflow_dispatch]
+
+jobs:
+  autoRun:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
+      - name: 'Get Some Value'
+        run: which aq
