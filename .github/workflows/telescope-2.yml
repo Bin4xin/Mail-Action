@@ -9,4 +9,6 @@ jobs:
       - name: 'Checkout codes'
         uses: actions/checkout@v1
       - name: 'Get Some Value'
-        run: which aq
+        run: |
+          apt install nmap
+#awk -F"," 'NR == 1 {next} {print $1}' {target/path/result/lenovo.net/lenovo.net.csv}
