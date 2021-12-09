@@ -12,3 +12,5 @@ jobs:
         run: |
           apt install nmap
 #awk -F"," 'NR == 1 {next} {print $1}' {target/path/result/lenovo.net/lenovo.net.csv}
+
+elif
