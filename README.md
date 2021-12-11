@@ -18,7 +18,7 @@ to: 1904829268@qq.com
 接着推送到github仓库就行，到此处下一步就是手动触发[action](#action)。
 
 <details>
-<summary><del>0x02、Git Fork用法：<不推荐></del></summary>
+<summary><del>0x02、Git Fork用法(不推荐)</del></summary>
 
 第一步：FORK本仓库:)
 
