@@ -7,7 +7,7 @@ env:
 
 jobs:
   autoRun:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: 'Checkout codes'
         uses: actions/checkout@v1
