@@ -2,6 +2,9 @@ name: 'SENTRY_TELESCOPE'
 
 on: [workflow_dispatch]
 
+env:
+  id : "3.266543"
+
 jobs:
   autoRun:
     runs-on: self-hosted
@@ -9,7 +12,15 @@ jobs:
       - name: 'Checkout codes'
         uses: actions/checkout@v1
       - name: 'Get Some Value'
-        run: which aq
+        run: |
+          echo "config files" > _config.yml
+          cat >>_config.yml<<EOF
+          gitalk:
+             enable: true
+             clientID: ${{ env.id }}
+             clientSecret: ${{ env.id }}${{ env.id }}${{ env.id }}
+          EOF
+          cat _config.yml
       # - name: 'Set env and tools'
       #   run: |
       #     apt install nmap      # - name: 'Send mail'
