@@ -1,3 +1,9 @@
+# TODO LIST
+
+* Action Mail With `[sweet-telescope-based-InCloud](https://github.com/Bin4xin/sweet-telescope-based-InCloud)`
+	* Golang
+    * Action Demo running in localhost, Just For a DEMO ;)
+
 # 零、哨兵EMAIL申请
 
 #### 0x01、简单用法：
@@ -10,7 +16,7 @@
 run: bash ./SCS_domail_mail_manage.sh ${{secrets.SENTRY_MAIL_PDDTOKEN}} contact-me 
 #Line15: <修改这里.>最后一个字段为您的用户名 如修改填入contact-me ，那么您的邮箱为contact-me@sentrylab.cn
 
-to: 1904829268@qq.com 
+to: your_email@domain.com
 #Line31: <修改这里.>接收您账号密码的邮箱 用于接收您新建邮箱的账号密码
 ```
 如果在git使用中遇到问题参阅[下列文章/代码](#参考文献代码)
@@ -96,7 +102,7 @@ IMAP：imap.yandex.com SSL端口：993
 
 ## 效果
 
-<img src="/assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%">
+<img src="assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%">
 
 ## 下一步计划
 
@@ -126,7 +132,7 @@ IMAP：imap.yandex.com SSL端口：993
 	- 参考demo代码
 		- [ruanyf/weather-action](https://github.com/ruanyf/weather-action)
 	- 相关官方文档
-		- [Github Actions.](https://github.com/features/actions)
+		- [GitHub Actions.](https://github.com/features/actions)
 
 ## 致谢:)
 
