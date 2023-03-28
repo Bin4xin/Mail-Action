@@ -1,8 +1,10 @@
 # TODO LIST
 
-* Action Mail With `[sweet-telescope-based-InCloud](https://github.com/Bin4xin/sweet-telescope-based-InCloud)`
+* Action Mail With [`sweet-telescope-based-InCloud`](https://github.com/Bin4xin/sweet-telescope-based-InCloud)
 	* Golang
     * Action Demo running in localhost, Just For a DEMO ;)
+* 加入关注点细节，如突出关注点、上次运行是的关注点内容对比；
+* 现HTML模版过于简单，计划添加复杂HTML模版。
 
 # 零、哨兵EMAIL申请
 
@@ -63,11 +65,11 @@ git push upstream SCS-1.0-dev
 
 ## action
 
-<img src="/assets/截屏2021-12-02 下午10.09.56.png" width="90%" height="90%">
+<img src="assets/截屏2021-12-02 下午10.09.56.png" width="90%" height="90%">
 
 ## 效果
 
-<img src="/assets/截屏2021-12-02 下午10.13.02.png" width="50%" height="50%">
+<img src="assets/截屏2021-12-02 下午10.13.02.png" width="50%" height="50%">
 
 ## 加入客户端
 
@@ -103,12 +105,6 @@ IMAP：imap.yandex.com SSL端口：993
 ## 效果
 
 <img src="assets/IMG_E169327EB634-1.jpeg" width="50%" height="50%">
-
-## 下一步计划
-
-- 加入关注点细节，如突出关注点、上次运行是的关注点内容对比；
-- 现HTML模版过于简单，计划添加复杂HTML模版。
-
 
 ## 贡献者
 
